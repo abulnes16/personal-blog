@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;1,500&family=Roboto+Slab:wght@300;400;500;700&family=Roboto:wght@300;400;500&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  font-family: "Roboto Mono", monospace;
+}
+
+a {
+  text-decoration: none;
+  display: inline;
+  color: black;
+}
+
+/* ---------------HEADER Styles----------------- */
+header {
+  width: 100%;
+  height: 140px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+header .header-icons-container {
+  width: 100%;
+  height: 50px;
+  display: grid;
+  background-color: #53adc0;
+}
+
+header .header-icons-container .icons {
+  width: 300px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-self: end;
+  margin-right: 50px;
+}
+
+header .icons span {
+  color: white;
+}
+
+header .icons span::before {
+  font-size: 26px;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 90px;
+}
+
+nav .nav-logo-container {
+  margin-left: 50px;
+}
+
+nav .nav-logo-container img {
+  width: 220px;
+  margin-top: 10px;
+}
+
+nav .profile-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+
+nav .profile-link a {
+  background-color: #53adc0;
+  padding: 10px 15px;
+  border-radius: 6px;
+  color: white;
+  border: 1px solid #2e8ea2;
+}
+nav .profile-link a:hover {
+  background-color: #2e8ea2;
+  border: 1px solid #53adc0;
+}
+
+/* ------------------Main Styles-------------------- */
+
+.home-main {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/img/cover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home-main .main-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-items: center;
+}
+
+.main-container section {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+.main-container .main-title {
+  color: white;
+  font-size: 25px;
+  font-weight: 300;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+.main-container h1 {
+  margin: 0;
+}
+
+.main-container .main-link {
+  align-self: start;
+}
+
+.main-container .main-link button {
+  padding: 15px 20px;
+  font-size: 20px;
+  border: 1px solid white;
+  border-radius: 3px;
+  background: #53adc0;
+  color: white;
+  font-family: inherit;
+  font-weight: 600;
+}
+.main-container .main-link button:hover {
+  border: 1px solid #53adc0;
+  background: #2e8ea2;
+}
+.main-container .main-link button:focus {
+  outline: none;
+  border: 1px solid white;
+}
