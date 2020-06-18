@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;1,500&family=Roboto+Slab:wght@300;400;500;700&family=Roboto:wght@300;400;500&display=swap");
+
 body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Mono", monospace;
+}
+
+.home-body {
   margin: 0;
   padding: 0;
   position: fixed;
@@ -7,13 +14,27 @@ body {
   bottom: 0;
   right: 0;
   left: 0;
-  font-family: "Roboto Mono", monospace;
 }
 
 a {
   text-decoration: none;
   display: inline;
   color: black;
+}
+
+/* -------------------General Styles-------------- */
+
+.link {
+  background-color: #53adc0;
+  padding: 10px 15px;
+  border-radius: 6px;
+  color: white;
+  border: 1px solid #2e8ea2;
+}
+
+.link:hover {
+  background-color: #2e8ea2;
+  border: 1px solid #53adc0;
 }
 
 /* ---------------HEADER Styles----------------- */
@@ -71,19 +92,9 @@ nav .profile-link {
   margin-right: 50px;
 }
 
-nav .profile-link a {
-  background-color: #53adc0;
-  padding: 10px 15px;
-  border-radius: 6px;
-  color: white;
-  border: 1px solid #2e8ea2;
-}
-nav .profile-link a:hover {
-  background-color: #2e8ea2;
-  border: 1px solid #53adc0;
-}
 
-/* ------------------Main Styles-------------------- */
+
+/* ------------------HOME MAIN STYLES-------------------- */
 
 .home-main {
   width: 100%;
@@ -118,7 +129,12 @@ nav .profile-link a:hover {
   text-align: center;
 }
 
-.main-container h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -143,4 +159,104 @@ nav .profile-link a:hover {
 .main-container .main-link button:focus {
   outline: none;
   border: 1px solid white;
+}
+
+/* ------------------- BLOGS MAIN STYLES ------------------------ */
+
+.blogs-main p {
+  font-family: "Roboto", monospace;
+  font-size: 16px;
+  line-height: 1.8rem;
+}
+.main-principal-post {
+  background-color: #e6e9ed;
+  padding: 5px 20px;
+  display: grid;
+  grid-template-rows: 50px 1fr;
+}
+
+.main-principal-post h3 {
+  align-self: center;
+  margin-left: 40px;
+}
+
+.main-principal-post .principal-info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.principal-info h2 {
+  font-size: 40px;
+}
+
+.principal-info p {
+  font-size: 18px;
+}
+
+.post-list-container {
+    margin: 20px;
+    padding: 20px;
+}
+
+.post-list-container .post-list-title {
+    margin-bottom: 40px;
+    padding: 25px;
+    text-align: center;
+    border-bottom: 1px solid #e6e9ed;
+}
+
+.post-list {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+}
+
+.post-list .post-item .post-image {
+    width: 100%;
+}
+
+.post-item figure {
+    margin: 0;
+}
+
+.post-image img {
+    width: inherit;
+    height: inherit;
+}
+
+.post-item .post-info {
+    padding-top: 15px;
+}
+
+.post-info .post-title {
+    font-size: 20px;
+}
+
+.post-info p {
+    font-size: 15px;
+    line-height: 1.3rem;
+    margin-bottom: 30px;
+}
+
+/* -------------------Footer styles----------------- */
+
+.blog-footer {
+    width: 100%;
+    height: 100px;
+}
+
+.blog-footer .footer-color-div {
+    width: 100%;
+    height: 30px;
+    background-color: #53adc0;
+}
+
+.blog-footer .footer-info {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color:#434a54 ;
 }
