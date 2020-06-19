@@ -213,8 +213,10 @@ h6 {
 }
 
 .post-list {
+
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(200px, 320px));
+  justify-content: center;
   gap: 50px;
 }
 
