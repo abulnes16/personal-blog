@@ -304,6 +304,34 @@ h6 {
 
 /* ------------------- Profile styles ------------------------ */
 
+.profile-main-container {
+  width: 100%;
+  background-color: #e6e9ed ; 
+}
+
+.profile-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0 ;
+}
+
+.profile-info img {
+  width: 30%;
+}
+
+.profile-info article {
+  margin-left: 30px;
+}
+
+.profile-info article h2 {
+  font-size: 40px;
+}
+
+.profile-info article p {
+  font-size: 18px;
+}
+
 .profile-projects {
   width: 85%;
   margin: 30px auto 50px;
